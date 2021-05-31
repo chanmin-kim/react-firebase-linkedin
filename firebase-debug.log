@@ -1,0 +1,47 @@
+[debug] [2021-05-31T05:32:25.862Z] ----------------------------------------------------------------------
+[debug] [2021-05-31T05:32:25.864Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-05-31T05:32:25.865Z] CLI Version:   9.12.0
+[debug] [2021-05-31T05:32:25.865Z] Platform:      win32
+[debug] [2021-05-31T05:32:25.865Z] Node Version:  v14.16.1
+[debug] [2021-05-31T05:32:25.867Z] Time:          Mon May 31 2021 14:32:25 GMT+0900 (대한민국 표준시)
+[debug] [2021-05-31T05:32:25.867Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-31T05:32:25.877Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-31T05:32:25.877Z] > authorizing via signed-in user (power2rapcm@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Main
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using co-li-landing. 
+[debug] [2021-05-31T05:32:30.557Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/co-li-landing [none]
+[debug] [2021-05-31T05:32:31.274Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/co-li-landing 403
+[debug] [2021-05-31T05:32:31.274Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/co-li-landing {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-05-31T05:32:31.275Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-05-31T05:32:31.276Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Main\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project co-li-landing. Please make sure the project exists and your account has permission to access it.
