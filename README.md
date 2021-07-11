@@ -1,6 +1,25 @@
-## react-firebase-linkedin
+# K리그 경기응원 서비스
 
-전체 소스코드에 대한 설명은 여기서 확인할 수 있습니다.  
-https://freedman.tistory.com/category/Projects/React%20%2B%20Firebase%20%EB%A7%81%ED%81%AC%EB%93%9C%EC%9D%B8%20%ED%81%B4%EB%A1%A0
+## 기술스택
 
+- React
+- Redux
+- CSS
+- Firebase
 
+## 주요기능
+
+### 1. 로그인
+- Firebase를 통한 회원가입
+- Firebase Auth로 로그인인증
+- 로그인정보는 Redux로 관리
+
+### 2. 메인화면
+- 게시글 작성 후 Firebase 저장
+- 작성글 띄우기
+
+### 참고영상
+#### https://youtu.be/QaYts9sPmcY
+
+### 코드리뷰
+#### https://bit.ly/3wrUMQQ
