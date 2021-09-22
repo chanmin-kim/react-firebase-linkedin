@@ -7,7 +7,7 @@
 - CSS
 - Firebase
 
-## 주요기능
+## UX/UI
 
 ### 1. 로그인
 - Firebase를 통한 회원가입
